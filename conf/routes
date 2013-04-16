@@ -1,2 +1,3 @@
 GET     /                       controllers.Home.index
+GET     /ping                   controllers.Home.ping
 GET     /assets/*file           controllers.Assets.at(path = "/public", file)
