@@ -12,9 +12,9 @@ object HomeBuild {
   lazy val homepage = PlayProject.default("homepage")
     .settings(commonSettings: _*)
 
-  val commonSettings = Seq(
+  val commonSettings = linuxSettings ++ Seq(
     scalaVersion := "2.11.8",
-    version := "1.3.0",
+    version := "1.3.1",
     libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.0" % Test,
     RoutesKeys.routesGenerator := InjectedRoutesGenerator
   )
